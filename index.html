@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to IMSCD&R College Ahilyanagar</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="slider">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipPagF8DEze0WGfZffD0UcjrC8A60Kg5pvYhRkax=s680-w680-h510-rw" class="active">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxDSeRKgyA9AU7LVEQCXXxMu0n-7nPJWUuziGOg4fH5YXA-Gz7rO7NRHXGropx2eiycebWmReE9toEsIdXnB8NK3Lst3_gY4ewv8m-WssdRmcnXKrtOEKnKMK1OAV6viQFG01ZQ=s680-w680-h510-rw">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipPagF8DEze0WGfZffD0UcjrC8A60Kg5pvYhRkax=s680-w680-h510-rw">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxDSeRKgyA9AU7LVEQCXXxMu0n-7nPJWUuziGOg4fH5YXA-Gz7rO7NRHXGropx2eiycebWmReE9toEsIdXnB8NK3Lst3_gY4ewv8m-WssdRmcnXKrtOEKnKMK1OAV6viQFG01ZQ=s680-w680-h510-rw">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipPagF8DEze0WGfZffD0UcjrC8A60Kg5pvYhRkax=s680-w680-h510-rw">
+    </div>
+
+    <div class="content-boxes">
+        <div class="content-box">
+            <h3>MBA</h3>
+            <p><strong>Mudassar Sayyed</strong></p>
+            <p>Cell: 98814 58579</p>
+            <p>Email: <a href="mailto:sayyedmudassar@imscdr.ac.in">sayyedmudassar@imscdr.ac.in</a></p>
+            <p><a href="#"><img src="images/ql1.png" alt="MBA Faculty" style="width:50%;border-radius:8px;"></a></p>
+        </div>
+
+        <div class="content-box">
+            <h3>MCA</h3>
+            <p><strong>Sanjay Bhakkad</strong></p>
+            <p>Cell: 82085 73938</p>
+            <p>Email: <a href="mailto:sanjaybhakkad@imscdr.ac.in">sanjaybhakkad@imscdr.ac.in</a></p>
+            <p><a href="#"><img src="images/ql2.png" alt="MCA Faculty" style="width:50%;border-radius:8px;"></a></p>
+        </div>
+
+        <div class="content-box">
+            <h3>BBA / BCA</h3>
+            <p><strong>Mudassar Sayyed</strong></p>
+            <p>Cell: 98231 00756</p>
+            <p>Email: <a href="mailto:mudassar@imscdr.ac.in">mudassar@imscdr.ac.in</a></p>
+            <p><a href="#"><img src="images/ql3.png" alt="BBA/BCA Faculty" style="width:50%;border-radius:8px;"></a></p>
+        </div>
+
+        <div class="content-box">
+            <h3>Ph.D</h3>
+            <p><strong>Hatim Kayyumi</strong></p>
+            <p>Cell: 98600 76110</p>
+            <p>Email: <a href="mailto:hatimkayyumi@imscdr.ac.in">hatimkayyumi@imscdr.ac.in</a></p>
+            <p><a href="#"><img src="images/ql4.png" alt="Ph.D Faculty" style="width:50%;border-radius:8px;"></a></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>News & Updates</h3>
+            <ul>
+                <li>Admissions open for 2026</li>
+                <li>Annual Sports Day on 20th Jan</li>
+                <li>Workshop on AI on 5th Feb</li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h2>About ABC College</h2>
+            <p>ABC College is a premier institution offering quality education and overall development for students. Our mission is to empower students with knowledge and skills for the future.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 IMSCD&R College Ahilyanagr. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Simple Slider Script
+        let slides = document.querySelectorAll('.slider img');
+        let index = 0;
+        setInterval(() => {
+            slides[index].classList.remove('active');
+            index = (index + 1) % slides.length;
+            slides[index].classList.add('active');
+        }, 3000);
+    </script>
+</body>
+</html>

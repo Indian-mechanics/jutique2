@@ -1,0 +1,172 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling with background image */
+body {
+    font-family: Arial, sans-serif;
+    background: url('../images/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header */
+header {
+    background-color: rgba(0, 0, 50, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Mobile friendly */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Active Page Highlight */
+nav ul li a.active {
+    background-color: #ffcc00;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Image Slider */
+.slider {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    position: relative;
+}
+
+.slider img {
+    width: 100%;
+    display: none;
+}
+
+.slider img.active {
+    display: block;
+}
+
+/* Main content container */
+.container {
+    display: flex;
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.9);
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+/* Main content area */
+.main-content {
+    flex: 3;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 10px;
+}
+
+/* 4 content divs */
+.content-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.content-box {
+    flex: 1;
+    margin: 0 10px;
+    background-color: rgba(200,200,200,0.7);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.footer-section div {
+    flex: 1 1 200px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Contact form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
